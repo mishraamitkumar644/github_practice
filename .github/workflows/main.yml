@@ -1,0 +1,20 @@
+name: "my_first_workflow"
+on:
+  push:
+    branches:
+      - 'main'
+      - 'feature/**'
+jobs:
+  myfirstjob: 
+    name: mycode
+    runs-on: ubuntu-latest
+    steps:
+      - name : my first code
+        run: |
+          echo "It's my first workflow"
+          echo "Welldone"
+          echo "it's successful"
+          
+    
+      
+    
